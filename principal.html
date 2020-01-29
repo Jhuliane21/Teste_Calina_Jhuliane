@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pagina Principal</title>
+	<link href="bootstrap.min.css" rel="stylesheet" media="screen">
+	<meta charset="utf-8">
+	<style type="text/css">
+		.card{
+			float: left;
+			margin-left: 40px;
+		}
+		.container{
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			height: 500px;
+		    display: flex;
+		    flex-wrap: wrap;
+		    align-items: center;
+		    text-align:center;
+
+		}
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <a class="navbar-brand" href="#">Sobre a Empresa</a>
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="principal.html">Inicio <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Demais Produtos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Trabalhe Conosco</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquise</button>
+    </form>
+  </div>
+</nav>
+<br>
+<h1 style="text-align: center; text-shadow: 5px 5px 5px #ccc; ">Produtos disponiveis para venda a partir de hoje.</h1>
+<br>
+<div class="card" style="width: 18rem;">
+  <img src="paleta.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text" style="color: grey">Paleta de sombras Zamphy acompanha 35 cores fantasticas para você arrasar em qualquer ocasião.</p>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="paleta01.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text" style="color: grey">Paleta de sombras Luisance acompanha 15 cores fantasticas para você arrasar em qualquer ocasião.</p>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="paleta02.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text" style="color: grey">Paleta de sombras acompanha diversas cores fantasticas para você arrasar em qualquer ocasião.</p>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="paleta03.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text" style="color: grey">Paleta de sombras acompanha diversas cores fantasticas para você arrasar em qualquer ocasião.</p>
+  </div>
+</div>
+
+<div class="container">
+	<h1 style="text-align: center; text-shadow: 3px 3px 3px #ccc;"><b>Faça aqui o seu pedido:<b></h1><br>
+<form class="form" method="POST" action="enviaemail.php">
+    Nome:<br>
+    <input type="text" name="nome">
+    <br>
+    <br>
+    Email:<br>
+    <input type="text" name="email">
+    <br>
+    <br>
+    Idade:<br>
+    <input type="number" name="idade">
+    <br>
+    <br>
+    Telefone:<br>
+    <input type="text" name="telefone">
+    <br>
+    <br>
+    Mensagem:<br>
+    <input type="textarea" name="mensagem">
+    <br>
+    <br>
+    <input type="submit" name="enviar">
+    <br>
+    <br>
+  </form>
+</div>
+</div>
+</body>
+</html>
